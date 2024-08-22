@@ -1,0 +1,19 @@
+:root {
+    background-color: burlywood;
+    color: white;
+}
+
+#shirt-image {
+    object-fit: contain;
+}
+
+.shirt-head {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.shirts {
+    display: flex;
+}

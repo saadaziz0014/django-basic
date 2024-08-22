@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1 class="shirt-head">All shirts here</h1>
+    <div class="shirts">
+    {% for shirt in shirts  %}
+        <div>
+            <h1>{{ shirt.title }}</h1>
+            <img width="100" height="100" id="shirt-image" src="{{ shirt.picture.url }}" alt="{{ shirt.title }}">
+            <button><a href="{% url 'shirt' shirt_id=shirt.id %}">Details</button>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}
